@@ -7,7 +7,29 @@
 //
 
 #import "Games+Games.h"
+#import "PCRGames.h"
+#import "User+User.h"
 
 @implementation Games (Games)
+
++(Games *)gameForStorage:(PCRGames *)aGame
+   inManagedObjectContext:(NSManagedObjectContext *)context
+{
+    Games *g = nil;
+    
+    
+        g = [NSEntityDescription insertNewObjectForEntityForName:@"Games"
+                                              inManagedObjectContext:context];
+    
+        NSNumber *sc = [NSNumber numberWithInteger:aGame.score];
+        g.score = sc;
+        g.date = aGame.date;
+        g.gameType = aGame.type;
+        g.whoPlayed = [User userName:aGame.username
+              inManagedObjectContext:context];
+    
+    return g;
+}
+
 
 @end

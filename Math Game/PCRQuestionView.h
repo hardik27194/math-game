@@ -10,4 +10,12 @@
 
 @interface PCRQuestionView : UIView
 
+/*
+Custom view that presents the objects to the player
+ */
+
+
+-(instancetype)initWithNumber:(NSNumber *)number sizeOfViewWidth:(NSNumber *)sizeOfWidth;
+@property (strong, nonatomic) UIView *circleView;
+
 @end

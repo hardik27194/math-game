@@ -10,4 +10,6 @@
 
 @interface User (User)
 
++(User *)userName:(NSString *)aUser inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

@@ -10,4 +10,9 @@
 
 @interface PCRHomeViewController : UIViewController
 
+
+/*
+ View controller that is the home screen. Has access to all players and the ability to create a new one.
+ */
+
 @end

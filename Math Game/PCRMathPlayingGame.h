@@ -10,4 +10,15 @@
 
 @interface PCRMathPlayingGame : NSObject
 
+/*
+ Object that creates the game.
+ */
+
+
+@property (strong, nonatomic) NSNumber *first;
+@property (strong, nonatomic) NSNumber *second;
+@property (strong, nonatomic) NSNumber *result;
+
+-(instancetype)initWithType:(NSString*)type;
+
 @end

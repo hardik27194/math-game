@@ -10,4 +10,11 @@
 
 @interface PCRPickGameTypeViewController : UIViewController
 
+/*
+ View controller that is allows user to pick which type of game to play.
+ */
+
+@property (strong, nonatomic) NSString *username;
+
+
 @end

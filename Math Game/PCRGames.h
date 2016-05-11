@@ -10,4 +10,16 @@
 
 @interface PCRGames : NSObject
 
+/*
+ Object that is used to record a game
+ */
+
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *type;
+
+@property (nonatomic) NSInteger score;
+@property (nonatomic, strong) NSDate *date;
+
+-(instancetype)initWithUser:(NSString *)aUserName score:(NSInteger)aScore date:(NSDate *)aDate type:(NSString *)aType;
+
 @end

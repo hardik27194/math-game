@@ -10,4 +10,10 @@
 
 @interface PCRSubtractionViewController : UIViewController
 
+@property (strong, nonatomic) NSString *userName;
+
+/*
+ View controller that is used to host a subtraction game.
+ */
+
 @end

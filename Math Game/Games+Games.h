@@ -8,6 +8,12 @@
 
 #import "Games.h"
 
+@class PCRGames;
+
 @interface Games (Games)
+
++(Games *)gameForStorage:(PCRGames *)aGame
+  inManagedObjectContext:(NSManagedObjectContext *)context;
+
 
 @end

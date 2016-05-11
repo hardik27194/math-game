@@ -10,4 +10,12 @@
 
 @interface PCRSummaryViewController : UIViewController
 
+/*
+ View controller that is loaded after a game is over with the summary of the game.
+ */
+
+@property (nonatomic) NSInteger score;
+@property (nonatomic, strong) NSString *userName;
+@property (nonnull, strong) NSString *type;
+
 @end

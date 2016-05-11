@@ -10,4 +10,13 @@
 
 @interface PCRNumberGenerator : NSObject
 
+/*
+ Object that generates 2 random numbers between 1 and 10.
+ */
+
+
+@property (strong, nonatomic) NSNumber *firstNumber;
+@property (strong, nonatomic) NSNumber *secondNumber;
+
+
 @end

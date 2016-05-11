@@ -10,4 +10,23 @@
 
 @implementation PCRGames
 
+-(instancetype)initWithUser:(NSString *)aUserName score:(NSInteger)aScore date:(NSDate *)aDate type:(NSString *)aType
+{
+    self = [super init];
+    
+    if (self) {
+        
+        _username = aUserName;
+        _score = aScore;
+        _date = aDate;
+        _type = aType;
+        
+        
+    }
+    
+    return self;
+    
+}
+
+
 @end

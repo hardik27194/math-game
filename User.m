@@ -12,5 +12,15 @@
 @implementation User
 
 // Insert code here to add functionality to your managed object subclass
+/*
+ @dynamic username;
+ @dynamic gamesPlayed;
+ */
+
+-(NSString *)description
+{
+    return [NSString stringWithFormat:@"%@ %@", [self class], @{@"username":self.username, @"games played":[NSNumber numberWithUnsignedLong:[self.gamesPlayed count]]}];
+}
+
 
 @end

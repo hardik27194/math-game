@@ -13,4 +13,19 @@
 
 // Insert code here to add functionality to your managed object subclass
 
+/*
+ 
+ @dynamic date;
+ @dynamic gameType;
+ @dynamic score;
+ @dynamic whoPlayed;
+ */
+
+-(NSString *)description
+{
+    
+    return [NSString stringWithFormat:@"%@, %@", [self class], @{@"date":self.date, @"gameType":self.gameType, @"score":self.score, @"player":self.whoPlayed}];
+    
+}
+
 @end

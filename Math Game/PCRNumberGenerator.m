@@ -10,4 +10,19 @@
 
 @implementation PCRNumberGenerator
 
+-(instancetype)init
+{
+    self = [super init];
+    
+    if (self) {
+        NSInteger first = arc4random_uniform(9) + 1;
+        self.firstNumber = @(first);
+        
+        NSInteger second = arc4random_uniform(9) + 1;
+        self.secondNumber = @(second);
+    }
+    
+    return self;
+}
+
 @end

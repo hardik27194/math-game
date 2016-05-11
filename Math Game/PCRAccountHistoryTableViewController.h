@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class User;
+
 @interface PCRAccountHistoryTableViewController : UITableViewController
+
+/*
+ View controller that shows the summary of a user.
+ */
+
+@property (nonatomic, strong) User *user;
+
 
 @end
